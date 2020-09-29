@@ -58,19 +58,5 @@
 - 找到这一行 `$hook = "http://ethosdistro.com/get.php";`
 - 替换为 `$hook = "http://{your_app_domain}/api/pushstat"` 其中 `{your_app_domain}` 改成你自己的服务器地址;
 
-## 集成与定制
 
-我们能为你提供付费的定制和安装服务。 [40451@qq.com](mailto:40451@qq.com)
-
-## 项目捐助
-
-我是兼职程序员. 如果项目对你有用, 非常乐意接受你的捐助:
-- 比特币: `35srf7rfL4MTzicftAceAKX9DLVKmzhgiz`
-- 支付宝
-
-![alipay](https://github.com/QQ40451/minestat/blob/master/public/img/QRPayPal.png.JPG)
-
-- [以太坊](0xa0b742B1616f960174aF78944D85EA0bb1F188d6) 
-
-![ETH](https://github.com/QQ40451/minestat/blob/master/public/img/y_donate.jpg)
 
