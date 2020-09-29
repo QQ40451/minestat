@@ -43,7 +43,7 @@ alternate 是一个用于ethos矿机的 简单、免费、强大的面板 。系
 
 ## 安装说明
 
-- 安装 `docker`  教程： [instructions](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- 安装 `docker`   [教程](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - 创建目录 `mkdir /app/folder && cd /app/folder`
 - 下载项目源码 `git clone https://github.com/artdevision/minestat.git ./`
 - 运行安装脚本 `sudo install.sh`
