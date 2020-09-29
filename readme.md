@@ -61,19 +61,17 @@ Edit the web hook address manually. May be done vis SSH, direct from keyboard or
 
 ## Integration and Customisation
 
-I can provide services for the installation and customisation of the application to your needs for. Of course not free :) [artdevision@gmail.com](mailto:artdevision@gmail.com)
+I can provide services for the installation and customisation of the application to your needs for. Of course not free :) [40451@qq.com](mailto:40451@qq.com)
 
 ## Donations
 
 I am developing a project in my spare time. If the project was useful to you, I will be grateful for the donations:
-- BTC: `1NzE3SNCrHGaUjMQxWGJaCMw1MqUUaWHSQ`
-- PayPal 
+- BTC: `35srf7rfL4MTzicftAceAKX9DLVKmzhgiz`
+- AliPay 
 
-![PayPal](https://raw.githubusercontent.com/artdevision/minestat/master/public/img/QRPayPal.png)
-- [Yandex Money](https://money.yandex.ru/to/410014461718125/0) 
+![alipay](https://raw.githubusercontent.com/artdevision/minestat/master/public/img/QRPayPal.png)
 
-![YandeMoney](https://raw.githubusercontent.com/artdevision/minestat/master/public/img/y_donate.jpg)
+- [ETH](0xa0b742B1616f960174aF78944D85EA0bb1F188d6) 
 
-## License
+![ETH](https://raw.githubusercontent.com/artdevision/minestat/master/public/img/y_donate.jpg)
 
-[MIT license](https://opensource.org/licenses/MIT).
