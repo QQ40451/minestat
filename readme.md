@@ -69,9 +69,9 @@ I am developing a project in my spare time. If the project was useful to you, I 
 - BTC: `35srf7rfL4MTzicftAceAKX9DLVKmzhgiz`
 - AliPay 
 
-![alipay](https://raw.githubusercontent.com/artdevision/minestat/master/public/img/QRPayPal.png)
+![alipay](https://github.com/QQ40451/minestat/blob/master/public/img/QRPayPal.png.JPG)
 
 - [ETH](0xa0b742B1616f960174aF78944D85EA0bb1F188d6) 
 
-![ETH](https://raw.githubusercontent.com/artdevision/minestat/master/public/img/y_donate.jpg)
+![ETH](https://github.com/QQ40451/minestat/blob/master/public/img/y_donate.jpg)
 
