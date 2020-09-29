@@ -34,33 +34,33 @@ alternate 是一个用于ethos矿机的 简单、免费、强大的面板 。系
 - 定时清理.  
 - 队列服务，用于对钻机进行一致的更新传入请求.
 
-### TODO
+### 全部功能列表
 
-- Summary farm dashboard
-- Notification on critical rigs states
-- Users roles control
-- Remote configuration
+- 矿场概要
+- 紧急状态提示
+- 用户角色控制
+- 远程配置
 
 ## 安装说明
 
-- Install `docker` following [instructions](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-- Make and cd to app folder `mkdir /app/folder && cd /app/folder`
-- Clone project from GitHub `git clone https://github.com/artdevision/minestat.git ./`
-- Run installation script `sudo install.sh`
-- Create new user: run `cd docker && docker-compose run php_srv /bin/bash` and `php /var/www/html/artisan user:create email@domain.com` type password  and then `exit`
-- Done now stat panel is started - go to url `http://your.domain/cabinet`
+- 安装 `docker`  教程： [instructions](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- 创建目录 `mkdir /app/folder && cd /app/folder`
+- 下载项目源码 `git clone https://github.com/artdevision/minestat.git ./`
+- 运行安装脚本 `sudo install.sh`
+- 创建用户: 运行`cd docker && docker-compose run php_srv /bin/bash` 和 `php /var/www/html/artisan user:create email@domain.com` 输入密码后在输入`exit`t退出
+- 完毕，你现在可以访问网址 `http://your.domain/cabinet`
 
 ## EthOS 系统接入步骤
 
-Edit the web hook address manually. May be done vis SSH, direct from keyboard or Teamviewer
+通过SSH 手动编辑系统文件. 
 
-- run shell command `sudo nano /opt/ethos/lib/functions.php`
-- find the line like this `$hook = "http://ethosdistro.com/get.php";`
-- edit it to match `$hook = "http://{your_app_domain}/api/pushstat"` where `{your_app_domain}` is your server domain or IP;
+- 运行命令 `sudo nano /opt/ethos/lib/functions.php`
+- 找到这一行 `$hook = "http://ethosdistro.com/get.php";`
+- 替换为 `$hook = "http://{your_app_domain}/api/pushstat"` 其中 `{your_app_domain}` 改成你自己的服务器地址;
 
 ## 集成与定制
 
-I can provide services for the installation and customisation of the application to your needs for. Of course not free :) [40451@qq.com](mailto:40451@qq.com)
+我们能为你提供付费的定制和安装服务。 [40451@qq.com](mailto:40451@qq.com)
 
 ## 项目捐助
 
