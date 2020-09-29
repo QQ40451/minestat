@@ -7,33 +7,32 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Ethos statistics panel
+## Ethos 状态面板
 
-An alternate free simple but useful panel for Ethos mining rigs. Application based on Laravel 5.8.10 framework.
+alternate 是一个用于ethos矿机的 简单、免费、强大的面板 。系统基于 Laravel 5.8.10 .
+你可以在自己的服务器上安装用于控制你的矿场。
 
-You can install it on your own server and it will be useful tool to control your mining farm.
+系统对每一项指标都有详细的报表. 
 
-Having charts almost for all indicators. 
+安装使用docker 技术，能自动解决各种依赖。不需要太多专业技能。
+
+双核cpu 2G内存大约能支持100台矿机频繁访问，超过这个数量需要另行优化。
 
 
-It includes all the necessary dependencies and environment with `docker-compose`, you can configure` docker-ce` and `docker-compose` and run the application, following the installation instructions, without any deployment skills.
-
-Passed testing and optimising on farm over 100 rigs with hi frequency requests from rigs on VDS with 2CPU and 2GB.
-
-### Screenshots
+### 系统截图
 
 ![Rigs table](https://raw.githubusercontent.com/artdevision/minestat/master/public/img/screenshot.png)
 ![Chart example](https://raw.githubusercontent.com/artdevision/minestat/master/public/img/chartscreen.png)
 
 
-### Features
-- MongoDB data storage
-- Bootstrap admin panel
-- Charts
-- Throttle control of requests per minute from rigs, to balance load of application server 
-- Basic authentication for user
-- Included `cron` task for reset outdated statistic.  
-- Redis queue service for consistent update incoming requests from rigs.
+### 技术参数
+- MongoDB 数据库
+- 管理面板
+- 报表
+- 负载均衡矿机每分钟的请求数 
+- 简单的用户认证
+- 定时清理.  
+- 队列服务，用于对钻机进行一致的更新传入请求.
 
 ### TODO
 
@@ -42,7 +41,7 @@ Passed testing and optimising on farm over 100 rigs with hi frequency requests f
 - Users roles control
 - Remote configuration
 
-## Installation
+## 安装说明
 
 - Install `docker` following [instructions](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - Make and cd to app folder `mkdir /app/folder && cd /app/folder`
@@ -51,7 +50,7 @@ Passed testing and optimising on farm over 100 rigs with hi frequency requests f
 - Create new user: run `cd docker && docker-compose run php_srv /bin/bash` and `php /var/www/html/artisan user:create email@domain.com` type password  and then `exit`
 - Done now stat panel is started - go to url `http://your.domain/cabinet`
 
-## EthOS setting up
+## EthOS 系统接入步骤
 
 Edit the web hook address manually. May be done vis SSH, direct from keyboard or Teamviewer
 
@@ -59,19 +58,19 @@ Edit the web hook address manually. May be done vis SSH, direct from keyboard or
 - find the line like this `$hook = "http://ethosdistro.com/get.php";`
 - edit it to match `$hook = "http://{your_app_domain}/api/pushstat"` where `{your_app_domain}` is your server domain or IP;
 
-## Integration and Customisation
+## 集成与定制
 
 I can provide services for the installation and customisation of the application to your needs for. Of course not free :) [40451@qq.com](mailto:40451@qq.com)
 
-## Donations
+## 项目捐助
 
-I am developing a project in my spare time. If the project was useful to you, I will be grateful for the donations:
-- BTC: `35srf7rfL4MTzicftAceAKX9DLVKmzhgiz`
-- AliPay 
+我是兼职程序员. 如果项目对你有用, 非常乐意接受你的捐助:
+- 比特币: `35srf7rfL4MTzicftAceAKX9DLVKmzhgiz`
+- 支付宝
 
 ![alipay](https://github.com/QQ40451/minestat/blob/master/public/img/QRPayPal.png.JPG)
 
-- [ETH](0xa0b742B1616f960174aF78944D85EA0bb1F188d6) 
+- [以太坊](0xa0b742B1616f960174aF78944D85EA0bb1F188d6) 
 
 ![ETH](https://github.com/QQ40451/minestat/blob/master/public/img/y_donate.jpg)
 
