@@ -48,10 +48,12 @@
 - 下载项目源码 `git clone https://github.com/QQ40451/minestat.git ./`
 - 运行安装脚本 `sudo ./install.sh`
 - 创建用户: 运行`cd docker && docker-compose run php_srv /bin/bash` 和 `php /var/www/html/artisan
+
 user:create email@domain.com` 输入密码后在输入`exit`t退出
+
 - 完毕，你现在可以访问网址 `http://your.domain/cabinet`
 
-## EthOS /SMOS  系统接入步骤
+## EthOS  系统接入步骤
 
 通过SSH 手动编辑系统文件. 
 
