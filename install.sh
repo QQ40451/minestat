@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo rm /usr/local/bin/docker-compose
-curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` > docker-compose
+curl -L https://40451.net/dl/docker-compose-Linux-x86_64 > docker-compose
 chmod +x docker-compose
 sudo mv docker-compose /usr/local/bin
 
