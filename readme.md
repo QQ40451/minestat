@@ -74,11 +74,17 @@ $ sudo add-apt-repository \
 Bug修改：
 
 vi /app/folder/docker/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php
+
 找到这一行：
+
 $packages = json_decode($this->files->get($path), true);
+
 修改为:
+
 #$packages = json_decode($this->files->get($path), true);
+
 $installed = json_decode($this->files->get($path), true);
+
 $packages = $installed['packages'] ?? $installed;
 
 ## EthOS  系统接入步骤
