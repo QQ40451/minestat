@@ -44,22 +44,33 @@
 ## 安装说明
 
 - 安装 `docker`   [教程](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+
+$ sudo apt-get update
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+ $ sudo apt-get update
+ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+ $ sudo docker run hello-world
+
+
 - 创建目录 `mkdir -p /app/folder && cd /app/folder`
 - 下载项目源码 `git clone https://github.com/QQ40451/minestat.git ./`
 - 运行安装脚本 `sudo ./install.sh`
-- 创建用户: 运行`cd docker && docker-compose run php_srv /bin/bash` 和 `php /var/www/html/artisan
-
-user:create email@domain.com` 输入密码后在输入`exit`t退出
-
-- 完毕，你现在可以访问网址 `http://your.domain/cabinet`
+- 创建用户: 运行`cd docker && docker-compose run php_srv /bin/bash` 和 `php /var/www/html/artisan user:create 40451@40451.net` 输入密码后在输入`exit`退出
+- 完毕，你现在可以访问网址 `http://p.40451.net/cabinet`
 
 ## EthOS  系统接入步骤
-
 通过SSH 手动编辑系统文件. 
-
-- 运行命令 `sudo nano /opt/ethos/lib/functions.php`
+- 运行命令 `sudo vi /opt/ethos/lib/functions.php`
 - 找到这一行 `$hook = "http://ethosdistro.com/get.php";`
-- 替换为 `$hook = "http://{your_app_domain}/api/pushstat"` 其中 `{your_app_domain}` 改成你自己的服务器地址;
-
-
-
+- 替换为 `$hook = "http://p.40451.net/api/pushstat";` 
