@@ -69,6 +69,18 @@ $ sudo add-apt-repository \
 - 创建用户: 运行`cd docker && docker-compose run php_srv /bin/bash` 和 `php /var/www/html/artisan user:create 40451@40451.net` 输入密码后在输入`exit`退出
 - 完毕，你现在可以访问网址 `http://p.40451.net/cabinet`
 
+[In PackageManifest.php line 122:                        
+  Undefined index: name  ]  
+Bug修改：
+
+vi /app/folder/docker/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php
+找到这一行：
+$packages = json_decode($this->files->get($path), true);
+修改为:
+#$packages = json_decode($this->files->get($path), true);
+$installed = json_decode($this->files->get($path), true);
+$packages = $installed['packages'] ?? $installed;
+
 ## EthOS  系统接入步骤
 通过SSH 手动编辑系统文件. 
 - 运行命令 `sudo vi /opt/ethos/lib/functions.php`
